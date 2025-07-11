@@ -5,13 +5,18 @@ function App() {
   const changeVariable = () => {
     valueForTest = valueForTest + 1;
     setvalueForTest(valueForTest);
-
   }
-
-
   return (
     <>
       <button onClick={changeVariable}>Click</button>
+      <h1>I am okay {valueForTest}</h1>
+      <h1>I am okay {valueForTest}</h1>
+      <h1>I am okay {valueForTest}</h1>
+      <h1>I am okay {valueForTest}</h1>
+      <h1>I am okay {valueForTest}</h1>
+      <h1>I am okay {valueForTest}</h1>
+      <h1>I am okay {valueForTest}</h1>
+      <h1>I am okay {valueForTest}</h1>
       <h1>I am okay {valueForTest}</h1>
     </>
   )
