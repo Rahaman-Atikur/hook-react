@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from 'react';
 const Child = () => {
-    const [data, setFromApi] = useState([]);
+    const [value, setValue] = useState(0);
+    const handleClick = () => {
+        setValue(value + 1);
+    }
     useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/todos/1')
-            .then((res) => res.json())
-            .then((data) => setFromApi(data));
-    },[])
-
-    console.log(data);
-
+        console.log(value);
+    }, [value])
     return (
         <div>
-            <h1>I am Child</h1>
+            <p>Increment:{value}</p>
+            <button onClick={handleClick}>Click</button>
         </div>
     );
 };
